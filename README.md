@@ -1,1 +1,1 @@
-# smruti-ramteke.github.io
+# dinesh-more.github.io
