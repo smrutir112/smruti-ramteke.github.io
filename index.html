@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Personal Portfolio</title>
+    <meta content="Experienced Java Cloud Engineer/ AWS DevOps Engineer with hands-on experience in building robust applications using Spring Boot, REST APIs, and Microservices. Proficient in leveraging AWS services to design and deploy scalable and resilient solutions. Skilled in containerization using Docker and orchestration with Kubernetes. Demonstrated expertise in working with diverse databases including PostgreSQL, MySQL, MongoDB, and Elastic Search. Dedicated to continuous learning and professional development, seeking a team that values growth while achieving company objectives. Committed to delivering high-quality solutions and driving innovation in the cloud-native ecosystem."
+          name="description">
+
+
+    <!--
+      - favicon
+    -->
+    <link href="./assets/images/developer_software_icon_251042.ico" rel="shortcut icon" type="image/x-icon">
+
+    <!--
+      - custom css link
+    -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    <!--
+      - google font link
+    -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Include Leaflet CSS and JavaScript from a CDN -->
+    <link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        /* Set the map's height */
+        #map {
+          height: 400px;
+        }
+
+        .experience-small {
+          font-weight: normal;
+          /* color: #888; Optional: softer color */
+          color: var(--vegas-gold);
+          font-weight: var(--fw-400);
+          line-height: 1.6;
+          font-size: 0.55em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!--
+  - #MAIN
+-->
+
+<main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+        <div class="sidebar-info">
+
+            <figure class="avatar-box">
+                <img alt="Smruti Ramteke" src="./assets/images/avatar-2.png" width="80">
+            </figure>
+
+            <div class="info-content">
+                <h1 class="name" title="Smruti Ramteke">Smruti Ramteke</h1>
+
+                <p class="title">Cloud Engineer/ AWS DevOps Engineer</p>
+            </div>
+
+            <button class="info_more-btn" data-sidebar-btn>
+                <span>Show Contacts</span>
+
+                <ion-icon name="chevron-down"></ion-icon>
+            </button>
+
+        </div>
+
+        <div class="sidebar-info_more">
+
+            <div class="separator"></div>
+
+            <ul class="contacts-list">
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Email</p>
+
+                        <a class="contact-link" href="mailto:smrutir112@gmail.com">smrutir112@gmail.com</a>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Phone</p>
+
+                        <a class="contact-link" href="tel:+12133522795">+91 8369089199</a>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Birthday</p>
+
+                        <time datetime="1982-06-23">Dec 10, 1994</time>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Location</p>
+
+                        <address>Pune, India</address>
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <div class="separator"></div>
+
+            <ul class="social-list">
+
+                <li class="social-item">
+                    <a class="social-link" href="https://www.linkedin.com/in/smruti-ramteke-9a4823138" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+        <!--
+          - #NAVBAR
+        -->
+
+        <nav class="navbar">
+
+            <ul class="navbar-list">
+
+                <li class="navbar-item">
+                    <button class="navbar-link  active" data-nav-link>About</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Resume</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Certificates</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Portfolio</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Location</button>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!--
+          - #ABOUT
+        -->
+
+        <article class="about  active" data-page="about">
+
+            <header>
+                <h2 class="h2 article-title">About me</h2>
+            </header>
+
+            <section class="about-text">
+                <p>
+                    Skilled Engineer with 6+ years of experience in  Python Cloud Engineer and DevOps. A proven track record of success leading
+                    complex projects while managing cross-functional resources to drive efficiency in enterprise technology operations.
+                    Proficient in leveraging AWS services to design and deploy scalable and resilient solutions. Skilled in containerization using Docker and orchestration with
+                    Kubernetes. Demonstrated expertise in working with diverse databases including PostgreSQL, MySQL,
+                    MongoDB. 
+                    Hosted Infrasturcture using terraform and Cloud Formation.
+                    Dedicated to continuous learning and professional development, seeking a team
+                    that
+                    values growth while achieving company objectives. Committed to delivering high-quality solutions and
+                    driving
+                    innovation in the cloud-native ecosystem.
+                </p>
+            </section>
+
+
+            <!--
+              - service
+            -->
+
+            <section class="service">
+
+                <h3 class="h3 service-title">What i'm doing</h3>
+
+                <ul class="service-list">
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img alt="design icon" src="./assets/images/terraform.png" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Terraform</h4>
+                            <p class="service-item-text">
+                                Experienced in designing and implementing Infrastructure as Code (IaC) using Terraform to automate provisioning and management of AWS cloud resources. Developed reusable modules for networking, security, and compute services, reducing deployment time by 40%. Managed multi-environment infrastructure (dev, staging, prod) with remote state management in S3 and DynamoDB, and integrated Terraform with CI/CD pipelines such as Jenkins, GitHub Actions, and GitLab CI for automated deployments. Implemented backend state management and version control to ensure team-wide consistency, and migrated manual infrastructure setups to Terraform automation, improving scalability, reliability, and reducing errors across environments.
+                            </p>                        
+                        </div>
+                    </li>
+                    
+                    <li class="service-item">
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">CI/CD</h4>
+                            <p class="service-item-text">
+                                Skilled in implementing and managing CI/CD pipelines to streamline software delivery and infrastructure automation. Experienced in using tools such as Jenkins, GitHub Actions, and GitLab CI to automate build, test, and deployment processes across multi-environment architectures. Proficient in integrating CI/CD pipelines with container orchestration platforms like Kubernetes and Amazon EKS, as well as cloud infrastructure provisioning with Terraform and CloudFormation. Adept at incorporating automated testing, security scanning, and monitoring into pipelines, ensuring reliable, secure, and high-quality releases while reducing deployment time and improving team productivity.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img alt="Web development icon" src="./assets/images/icons-microservice.png" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Microservices</h4>
+
+                            <p class="service-item-text">
+                                Experienced in building microservices architecture, both with Spring Cloud for
+                                on-premises
+                                environments and Kubernetes for cloud-native deployments. Expertise includes designing,
+                                developing,
+                                and managing independent, loosely-coupled microservices to enhance system modularity and
+                                flexibility.
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img alt="mobile app icon" src="./assets/images/icons-cloud.png" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Serverless Framework</h4>
+
+                            <p class="service-item-text">
+                                Well-versed in utilizing AWS services to develop serverless applications and functions.
+                                Proficiency in
+                                designing and deploying serverless solutions that automatically scale, reducing
+                                operational overhead
+                                and optimizing cost-effectiveness.
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img alt="camera icon" src="./assets/images/icons-application-development.png" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Software development</h4>
+
+                            <p class="service-item-text">
+                                Hands-on experience in the end-to-end software development lifecycle. Skilled in
+                                creating web
+                                applications, encompassing everything from requirements analysis and design to
+                                implementation and
+                                testing. Proficient in delivering high-quality software solutions that meet business
+                                needs.
+                            </p>
+                        </div>
+
+                    </li>
+                    <li class="service-item">
+                        <div class="service-icon-box">
+                            <img alt="camera icon" src="./assets/images/AWS-1.png" width="40">
+                        </div>
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">AWS Cloud</h4>
+                            <p class="service-item-text">
+                                Experienced in designing and managing AWS cloud infrastructures with hands-on expertise. Skilled in building secure, scalable, and cost-optimized solutions using Terraform and CloudFormation. Proficient in implementing monitoring and automation. Strong background in networking, security best practices. Adept at supporting multi-environment deployments and driving cloud migration and optimization initiatives.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+            </section>
+
+
+            <!--
+              - testimonials
+            -->
+
+            <section class="testimonials">
+
+                <h3 class="h3 testimonials-title">Working Domain</h3>
+
+                <ul class="testimonials-list has-scrollbar">
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img alt="Daniel lewis" data-testimonials-avatar src="./assets/images/icons8-banking-100.png"
+                                     width="60">
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Banking</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    Adept in the banking sector, with a comprehensive understanding of financial
+                                    transactions, customer
+                                    accounts, and regulatory compliance. Proficient in developing and maintaining
+                                    banking software
+                                    solutions that facilitate core banking operations such as deposits, withdrawals,
+                                    fund transfers, and
+                                    loan management.
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img alt="Emily evans" data-testimonials-avatar src="./assets/images/icons8-finance-services-100.png"
+                                     width="60">
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Financial Services</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    Experienced in the realm of financial services, encompassing a wide range of
+                                    activities such as
+                                    wealth management, investment advisory, and asset allocation. Skilled in building
+                                    software tools and
+                                    platforms that support financial planning, portfolio management, and trading
+                                    activities to help
+                                    clients achieve their financial goals.
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img alt="Jessica miller" data-testimonials-avatar src="./assets/images/icons8-insurance-64(5).png"
+                                     width="60">
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Insurance</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    Well-versed in the insurance industry, with expertise in policy management, claims
+                                    processing, and
+                                    risk assessment. Proficient in developing software solutions tailored to the
+                                    insurance sector,
+                                    streamlining policy issuance, underwriting, and claims settlement processes to
+                                    enhance operational
+                                    efficiency and customer satisfaction.
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!--
+              - testimonials modal
+            -->
+
+            <div class="modal-container" data-modal-container>
+
+                <div class="overlay" data-overlay></div>
+
+                <section class="testimonials-modal">
+
+                    <button class="modal-close-btn" data-modal-close-btn>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                    <div class="modal-img-wrapper">
+                        <figure class="modal-avatar-box">
+                            <img alt="Daniel lewis" data-modal-img src="./assets/images/avatar-1.png" width="80">
+                        </figure>
+
+                        <img alt="quote icon" src="./assets/images/icon-quote.svg">
+                    </div>
+
+                    <div class="modal-content">
+
+                        <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                        <time datetime="2021-06-14">Client Location</time>
+
+                        <div data-modal-text>
+                            <p>
+                                Richard was hired to create a corporate identity. We were very pleased with the work
+                                done. She has a
+                                lot of experience
+                                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous
+                                cididt
+                                consectetur adipiscing
+                                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!--
+              - clients
+            -->
+
+            <section class="clients">
+
+                <h3 class="h3 clients-title">Tech Stack</h3>
+
+                <ul class="clients-list has-scrollbar">
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons-java.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_maven-svgrepo-com.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_amazon_aws_logo_icon.jpg">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons8-spring-boot-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/Python.jpg">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/Html-1.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_docker-svgrepo-com.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/Ansible.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/Git-Actions.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons8-mongodb-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons8-mysql-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_jenkins_logo_icon_167854.jpg">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_apache_kafka_logo_icon_167866.jpg">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons8-postgres-96.jpg">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/new-relic.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons8-elasticsearch-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons8-grafana-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/kubernetes.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo"
+                                 src="./assets/images/sqr_icons8-postman-is-the-only-complete-api-development-environment-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo"
+                                 src="./assets/images/sqr_tomcat_original_wordmark_logo_icon_146324.jpg">
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
+
+
+        <!--
+          - #RESUME
+        -->
+
+        <article class="resume" data-page="resume">
+
+            <header>
+                <!-- <h2 class="h2 article-title" >Resume</h2> -->
+                 <a href="https://github.com/smru-png/smruti-ramteke-portfolio/blob/main/index.html" download>
+                    <h2 class="h2 article-title">Resume</h2>
+                </a>
+
+            </header>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <img class="d-icon-img" src="assets/images/icons8-education-48.png">
+                    </div>
+
+                    <h3 class="h3">Education</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">B.Tech (Computer Science & Technology), Usha Mittal Institute of Technology (SNDT, Mumbai)</h4>
+
+                        <span>2013 — 2018</span>
+
+                        <p class="timeline-text">
+                            Scored60%aggregate 
+                        </p>
+
+                    </li>
+
+                </ol>
+
+            </section>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <img class="d-icon-img" src="assets/images/icons8-experience-24.png">
+                    </div>
+
+                    <!-- <h3 class="h3">Experience - <small id="experience-duration"></small></h3> -->
+                    <h3 class="h3">Experience <span class="experience-small" id="experience-duration"></span></h3>
+
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Tech Lead - Cognizant</h4>
+                        <span>December 2022 to Present</span>
+
+                        <p class="timeline-text">• Developed and managed data pipelines using AWS Glue, enabling seamless ETL (Extract, Transform, Load) processes for large datasets from multiple sources into AWS.</p>
+                        <p class="timeline-text">• Designed and implemented ETL workflows with AWS Glue, automating the extraction, transformation, and loading of structured and semi-structured data to S3, and other data stores.</p>
+                        <p class="timeline-text">• Utilized AWS Glue’s built-in PySpark and Scala scripts to transform raw data into usable formats, ensuring data quality and consistency for analytics teams.</p>
+                        <p class="timeline-text">• Automated and scheduled data processing jobs in AWS Glue using AWS Glue triggers, with monitoring and logging through AWS CloudWatch to ensure job success and performance.</p>
+                        <p class="timeline-text">• Configured IAM roles and policies for secure access to AWS Glue jobs, databases, and other AWS resources, following best practices for data security and governance.</p>
+                        <p class="timeline-text">• Integrated data from diverse sources such as RDS, S3, DynamoDB, and external APIs into AWS Glue, supporting cross-platform analytics and business intelligence.</p>
+                        <p class="timeline-text">• Used Service Catalog product and created CloudFormation YAML scripts to deploy AWS resources.</p>
+                        <p class="timeline-text">• Implemented CI/CD pipeline to automate deployment of AWS resources using CloudFormation templates.</p>
+                        <p class="timeline-text">• Utilized GitHub Actions to implement robust CI/CD pipelines, automating build, test, and deployment processes.</p>
+                        <p class="timeline-text">• Developed and deployed infrastructure-as-code (IaC) using Terraform, triggered through GitHub Actions workflows.</p>
+                        <p class="timeline-text">• Integrated SonarQube into GitHub Actions for automated code quality and static analysis scanning.</p>
+                        <p class="timeline-text">• Designed and provisioned AWS Lex infrastructure using modular Terraform code, supporting multi-environment deployments (e.g., dev, staging, prod).</p>                        <p class="timeline-text">• Configured Checkov for automated Terraform code scanning, ensuring compliance with security and cloud best practices.</p>                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">EPAM Systems</h4>
+                        <span>May 2022 to December 2022</span>
+
+                        <p class="timeline-text">• Implemented a scalable 3-tier architecture on AWS using Terraform, incorporating EC2 instances, IAM roles, Elastic Load Balancer, VPC configuration, Security Groups, VPC Endpoints, and S3 for secure and efficient infrastructure management.</p>
+                        <p class="timeline-text">• Provisioned and configured Amazon EKS clusters through Terraform to enable container orchestration with infrastructure as code, ensuring repeatability and scalability of Kubernetes deployments.</p>
+                        <p class="timeline-text">• Automated CI/CD pipeline setup by deploying GitHub Actions workflows using Terraform, streamlining code integration and delivery processes with infrastructure automation.</p>
+                        <p class="timeline-text">• Developed Groovy scripts to automate EKS cluster setup within Jenkins CI/CD pipelines, enabling seamless infrastructure provisioning and deployment automation.</p>
+                    </li> 
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Applied Cloud Computing</h4>
+                        <span>Nov 2019 to April 2022</span>
+
+                        <p class="timeline-text">• Designed highly available and redundant architecture to deploy containerized Java applications using AWS managed services (Auto Scaling, Load Balancers, Transit Gateway, Direct Connect, RDS, EC2, S3, Route 53, CloudWatch, Lambda, etc.).</p>
+                        <p class="timeline-text">• Hardened OS and AWS consoles following AWS and CIS best practices.</p>
+                        <p class="timeline-text">• Implemented encryption at rest for all storage using custom AWS KMS keys.</p>
+                        <p class="timeline-text">• Configured secure Site-to-Site VPN tunnels and Direct Connect between client infrastructure and AWS VPC.</p>
+                        <p class="timeline-text">• Automated patch management on clusters of servers using AWS Systems Manager (SSM).</p>
+                        <p class="timeline-text">• Built CI/CD pipelines to automate Docker deployment processes.</p>
+                        <p class="timeline-text">• Designed deployment strategies for scheduled containers and manual executable containers.</p>
+                        <p class="timeline-text">• Delivered static content from S3 using AWS CloudFront CDN.</p>
+                        <p class="timeline-text">• Deployed AWS services using CloudFormation templates.</p>
+                        <p class="timeline-text">• Managed multiple Windows and IIS websites, including FTPS site setup.</p>
+                        <p class="timeline-text">• Configured and managed database files in Microsoft SQL Server Management Studio.</p>
+                        <p class="timeline-text">• Monitored infrastructure and applications using Amazon CloudWatch and set up alerting.</p>
+                        <p class="timeline-text">• Delivered enhancements and solutions for existing cloud infrastructure, improving customer satisfaction and achieving business goals.</p>
+                        <p class="timeline-text">• Set up multi-account AWS architecture for enterprise-level multi-tenancy operations.</p>
+                        <p class="timeline-text">• Optimized and monitored production applications by identifying root causes and providing remedies for issues.</p>
+                        <p class="timeline-text">• Established centralized control and change management processes at the organizational level.</p>
+                        <p class="timeline-text">• Launched RDS instances and created read replicas to ensure high availability.</p>
+                        <p class="timeline-text">• Integrated New Relic for monitoring infrastructure and applications.</p>
+                        <p class="timeline-text">• Migrated RDS MySQL tables to Amazon S3 for analytics and archival.</p>
+                        <p class="timeline-text">• Queried data using AWS Athena and prepared datasets using AWS Glue.</p>
+                        <p class="timeline-text">• Launched Amazon EKS clusters using Terraform for scalable Kubernetes deployments.</p>
+                        <p class="timeline-text">• Implemented video and audio transcoding workflows using Python, AWS Lambda, AWS MediaConvert, S3, and DynamoDB for metadata management.</p>
+                        <p class="timeline-text">• Developed video stitching functionality to concatenate multiple video files into different formats, enhancing content delivery and user experience.</p>
+                        <p class="timeline-text">• Automated media processing by triggering Lambda functions from S3 events to submit files to AWS MediaConvert.</p>
+                    </li>
+
+                </ol>
+
+            </section>
+
+            <section class="skill">
+
+                <h3 class="h3 skills-title">My skills</h3>
+
+                <ul class="testimonials-list has-scrollbar">
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img alt="Daniel lewis" data-testimonials-avatar src="./assets/images/Python.jpg"
+                                     width="60">
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Python</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    Python Info
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img alt="Emily evans" data-testimonials-avatar src="./assets/images/icons8-amazon-aws-64.png"
+                                     width="60">
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>AWS Cloud</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    AWS Cloud Info
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img alt="Jessica miller" data-testimonials-avatar src="./assets/images/terraform.png"
+                                     width="60">
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Terraform</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    Terraform Info
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img alt="Henry william" data-testimonials-avatar src="./assets/images/icons8-kubernetes-96.png"
+                                     width="60">
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Kubernetes</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    Kubernetes Info
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
+
+
+        <article class="resume" data-page="certificates">
+
+            <header>
+                <h2 class="h2 article-title">Certificates</h2>
+            </header>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <img class="d-icon-img" src="assets/images/icons8-certificate-50.png">
+                    </div>
+
+                    <h3 class="h3">AWS</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">
+                            <a href="https://raw.githubusercontent.com/dinesh-more/storage/develop/certificate/AWS%20Certified%20Developer%20-%20Associate%20certificate.pdf"
+                               style="text-decoration: none; color: inherit;" target="_blank">
+                                AWS Certified Developer - Associate
+                            </a>
+                        </h4>
+                    </li>
+
+                </ol>
+
+                <br>
+            </section>
+        </article>
+
+        <!--
+          - #PORTFOLIO
+        -->
+
+        <article class="portfolio" data-page="portfolio">
+
+            <header>
+                <h2 class="h2 article-title">Portfolio</h2>
+            </header>
+
+            <section class="projects">
+
+                <ul class="filter-list">
+
+                    <li class="filter-item">
+                        <button class="active" data-filter-btn>All</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Serverless</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Applications</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Web development</button>
+                    </li>
+
+                </ul>
+
+                <div class="filter-select-box">
+
+                    <button class="filter-select" data-select>
+
+                        <div class="select-value" data-selecct-value>Select category</div>
+
+                        <div class="select-icon">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+
+                    </button>
+
+                    <ul class="select-list">
+
+                        <li class="select-item">
+                            <button data-select-item>All</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Serverless</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Applications</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Web development</button>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="project-list">
+
+                    <li class="project-item  active" data-category="web development" data-filter-item>
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img alt="finance" loading="lazy" src="./assets/images/insurance-policy.jpg">
+                            </figure>
+
+                            <h3 class="project-title">Insurence Product</h3>
+
+                            <p class="project-category">Web development</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-category="serverless" data-filter-item>
+                        <a href="https://github.com/dinesh-more/aws-api-gateway-lambda-authorizer" target="_blank">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <img class="d-icon-img" src="assets/images/icons8-eye-24.png">
+                                </div>
+
+                                <img alt="fundo" loading="lazy" src="./assets/images/lambda-authorizer.png">
+                            </figure>
+
+                            <h3 class="project-title">Lambda Authorizer</h3>
+
+                            <p class="project-category">Serverless</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-category="serverless" data-filter-item>
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img alt="fundo" loading="lazy" src="./assets/images/shortURL.png">
+                            </figure>
+
+                            <h3 class="project-title">ShortURL Redirection</h3>
+
+                            <p class="project-category">Serverless</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-category="applications" data-filter-item>
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img alt="brawlhalla" loading="lazy" src="./assets/images/bitly-springboot-replica.png">
+                            </figure>
+
+                            <h3 class="project-title">Bitly Replica</h3>
+
+                            <p class="project-category">Applications</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-category="serverless" data-filter-item>
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img alt="dsm." loading="lazy" src="./assets/images/apigw-http-sqs-lambda-sls.png">
+                            </figure>
+
+                            <h3 class="project-title">AWS SQS Mechanism</h3>
+
+                            <p class="project-category">Serverless</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-category="serverless" data-filter-item>
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img alt="metaspark" loading="lazy" src="./assets/images/lambda-ses.png">
+                            </figure>
+
+                            <h3 class="project-title">Bulk Email Sender</h3>
+
+                            <p class="project-category">Serverless</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-category="applications" data-filter-item>
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img alt="task manager" loading="lazy" src="./assets/images/call-vault.png">
+                            </figure>
+
+                            <h3 class="project-title">CallRecord Manager</h3>
+
+                            <p class="project-category">Applications</p>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
+
+
+        <!--
+          - #BLOG
+        -->
+
+        <article class="blog" data-page="blog">
+
+            <header>
+                <h2 class="h2 article-title">Blog</h2>
+            </header>
+
+            <section class="blog-posts">
+
+                <ul class="blog-posts-list">
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img alt="Design conferences in 2022" loading="lazy" src="./assets/images/blog-1.jpg">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                                <p class="blog-text">
+                                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img alt="Best fonts every designer" loading="lazy" src="./assets/images/blog-2.jpg">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                                <p class="blog-text">
+                                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img alt="Design digest #80" loading="lazy" src="./assets/images/blog-3.jpg">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                                <p class="blog-text">
+                                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam
+                                    corporis suscipit.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img alt="UI interactions of the week" loading="lazy" src="./assets/images/blog-4.jpg">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                                <p class="blog-text">
+                                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco
+                                    laboris nisi.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img alt="The forgotten art of spacing" loading="lazy" src="./assets/images/blog-5.jpg">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                                <p class="blog-text">
+                                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img alt="Design digest #79" loading="lazy" src="./assets/images/blog-6.jpg">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                                <p class="blog-text">
+                                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
+
+
+        <!--
+          - #CONTACT
+        -->
+
+        <article class="contact" data-page="location">
+
+            <header>
+                <h2 class="h2 article-title">Location</h2>
+            </header>
+
+            <!-- <section class="mapbox" data-mapbox>
+              <figure>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1512094.503662009!2d73.71747457119665!3d18.52043031556061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf632c9c8cc7%3A0x1f3826b3c94c06d!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1631756005866!5m2!1sen!2sin"
+                width="400" height="300" loading="lazy"></iframe>
+              </figure>
+            </section> -->
+
+            <section class="mapbox" data-mapbox>
+                <!-- <figure>
+                    <div id="map" style="width: 100%; height: 400px;"></div>
+                </figure>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script> -->
+                <div id="map"></div>
+
+                <script>
+                    // Initialize the map
+                    var map = L.map('map').setView([18.59267, 73.73887], 13); // Coordinates for Hinjewadi, Pune
+
+                    // Add a tile layer (you can choose different providers)
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+
+                    // Add a marker for the location
+                    var marker = L.marker([18.59267, 73.73887]).addTo(map);
+
+                    // Add a popup to the marker
+                    marker.bindPopup("<b>Hinjewadi</b>, Pune, Maharashtra, India").openPopup();
+                </script>
+            </section>
+
+        </article>
+
+    </div>
+
+</main>
+
+
+<!--
+  - custom js link
+-->
+<script src="./assets/js/script.js"></script>
+
+<!--
+  - ionicon link
+-->
+<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    function calculateExperience(startDateStr) {
+      const startDate = new Date(startDateStr);
+      const currentDate = new Date();
+
+      let years = currentDate.getFullYear() - startDate.getFullYear();
+      let months = currentDate.getMonth() - startDate.getMonth();
+      let days = currentDate.getDate() - startDate.getDate();
+
+      if (days < 0) {
+        months--;
+        days += new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
+      }
+
+      if (months < 0) {
+        years--;
+        months += 12;
+      }
+
+      return `${years} years, ${months} months, ${days} days`;
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const experienceText = calculateExperience("2019-07-01"); // <-- Set your actual start date here
+      document.getElementById("experience-duration").textContent = experienceText;
+    });
+</script>
+
+
+</body>
+
+</html>
